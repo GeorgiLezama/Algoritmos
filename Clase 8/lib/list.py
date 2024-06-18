@@ -11,12 +11,11 @@ class List:
             for i in range(self.FIN(L)-1, p,-1):
                 L[i] = L[i-1]
             L[p] = x
-
         return L
-    
     def inserta2(self,x,p):
         file = open("Data/data.txt")
         L = file.readlines()
+        L = [line.strip() for line in L]
 
         if self.FIN(L)==0:
             L.append(x)
@@ -27,5 +26,7 @@ class List:
             for i in range(self.FIN(L)-1, p,-1):
                 L[i] = L[i-1]
             L[p] = x
-
+        file = open("Data/data.txt", "w")
+        for i in L:
+            file.write(f"{i}\n")
         return L
