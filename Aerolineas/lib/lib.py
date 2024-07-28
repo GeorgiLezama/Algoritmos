@@ -13,8 +13,9 @@ class lib:
         j = json.load(file)
         for i in range(0,len(j)):
             if j[i]["Id"] == v.id:
-                j[i]["Pasajeros"] = p.toJson()
+                if "Pasajeros" not in j[i]:
+                    j[i]["Pasajeros"] = []
+                j[i]["Pasajeros"].append(p.toJson())
         file = open("Data/data.json","w")
         json.dump(j,file,ensure_ascii=False,indent=4)
         file.close()
-        
