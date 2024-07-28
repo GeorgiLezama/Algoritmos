@@ -1,0 +1,38 @@
+[
+    {
+        "Id": 1,
+        "Origen": "Argentina",
+        "destino": "Portugal",
+        "No. pasajeros": 7,
+        "Piloto": "Karelia",
+        "Pasajeros": {
+            "id": 1,
+            "Pasaporte": 123,
+            "Nombre": "Jorge"
+        }
+    },
+    {
+        "Id": 2,
+        "Origen": "Nicaragua",
+        "destino": "Inglaterra",
+        "No. pasajeros": 7,
+        "Piloto": "Allisson",
+        "Pasajeros": {
+            "id": 3,
+            "Pasaporte": 12345,
+            "Nombre": "Anny"
+        }
+    },
+    {
+        "Id": 3,
+        "Origen": "Argentina",
+        "destino": "Portugal",
+        "No. pasajeros": 7,
+        "Piloto": "Henry",
+        "Pasajeros": {
+            "id": 2,
+            "Pasaporte": 1234,
+            "Nombre": "Alejandro"
+        }
+    }
+]
